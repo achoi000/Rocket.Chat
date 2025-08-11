@@ -146,7 +146,7 @@ export class SAUMonitorClass {
 			});
 			if (!session?.loginToken) {
 				if (!isProdEnv) {
-					throw new Error('Session not found during logout');
+					//throw new Error('Session not found during logout');
 				}
 				logger.error('Session not found during logout', { userId, sessionId });
 				return;
